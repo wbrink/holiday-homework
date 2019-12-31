@@ -4,11 +4,28 @@ body {
 
 .main-content {
     background-color: white;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
 }
 
 /* makes the text appear newspaper column style */
 .main-content  p {
     text-align: justify;
     text-justify: inter-word;
+}
+
+.quote-box {
+    background-color: #e9ecef;
+    
+    width: 60%;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+footer {
+    background-color: #343a40;
+    color: rgba(255,255,255,.5);
+    text-align: center;
 }
