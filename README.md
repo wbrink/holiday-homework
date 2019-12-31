@@ -1,2 +1,2 @@
 # holiday-homework
-Seinfeld fan site
+Seinfeld Fan Site

@@ -1,0 +1,14 @@
+body {
+    background-color: grey;
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* makes the text appear newspaper column style */
+.main-content  p {
+    text-align: justify;
+    text-justify: inter-word;
+}
