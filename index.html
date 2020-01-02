@@ -1,21 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Hello, world!</title>
   </head>
-  <body>
-    
+
+  <!-- using flexbox to stretch main content and footer to the bottom in case not enough content -->
+  <body class="d-flex flex-column">
+    <!-- child 1: navbar -->
     <div class="container">
-      <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -25,7 +37,7 @@
             <a href="about.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Characters</a>
+            <a href="test.html" class="nav-link">Characters</a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">Contact</a>
@@ -34,59 +46,94 @@
       </nav>
     </div>
 
+    <!-- child 2: jumbotron -->
     <div class="container">
-      <!-- jumbotron -->
-      <div class="jumbotron px-4 mb-3">
+      <div class="jumbotron px-4">
         <h1 class="display-4">Seinfeld</h1>
         <p class="lead">"The Show About Nothing"</p>
       </div>
-    
-      <!-- main-content is a wrapper that rounds border and makes background white -->
-      <!-- synopsis -->
-      <div class="main-content px-4 py-3">
+    </div>
+
+    <!-- child 3: main-content -->
+    <!-- main-content is a wrapper that rounds border and makes background white -->
+    <div class="container flex-grow-1 d-flex flex-column">
+      <div class="main-content px-4 py-3 flex-grow-1">
         <div class="row mb-5">
           <div class="col-md-12">
             <h3>Synopsis</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur iusto eveniet, quas officia non incidunt inventore enim expedita nam vel. Sequi accusamus impedit, ipsum iste magni, qui perspiciatis inventore itaque ut, expedita omnis rerum. Quas odit, consequatur id delectus incidunt ad dolorum inventore nam, voluptatum dolorem sint, eligendi exercitationem? Praesentium.</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur iusto eveniet, quas officia non incidunt inventore
+              enim expedita nam vel. Sequi accusamus impedit, ipsum iste magni,
+              qui perspiciatis inventore itaque ut, expedita omnis rerum. Quas
+              odit, consequatur id delectus incidunt ad dolorum inventore nam,
+              voluptatum dolorem sint, eligendi exercitationem? Praesentium.
+            </p>
             <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
 
-        
         <div class="row mb-4">
-          <!-- left column feature -->
           <div class="col-md-6 clearfix">
             <h3>Featured Character</h3>
-            <img src="http://placehold.it/150x150" alt="" class="rounded float-left pr-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nostrum! Libero error beatae deserunt voluptatum optio, id tempora molestias excepturi officiis aut maiores repellat veniam atque dolor voluptates dolorum aliquid animi suscipit amet minus? Voluptatem, nemo doloribus? Vel, illo incidunt architecto quos, aspernatur consequatur temporibus eveniet cupiditate commodi assumenda dolore totam neque, dignissimos ipsa accusantium nesciunt voluptatum dicta? Error, nisi.</p>
+            <img
+              src="http://placehold.it/150x150"
+              alt=""
+              class="rounded float-left pr-3"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, nostrum! Libero error beatae deserunt voluptatum optio,
+              id tempora molestias excepturi officiis aut maiores repellat
+              veniam atque dolor voluptates dolorum aliquid animi suscipit amet
+              minus? Voluptatem, nemo doloribus? Vel, illo incidunt architecto
+              quos, aspernatur consequatur temporibus eveniet cupiditate commodi
+              assumenda dolore totam neque, dignissimos ipsa accusantium
+              nesciunt voluptatum dicta? Error, nisi.
+            </p>
             <a href="" class="btn btn-primary">Learn More</a>
           </div>
-          
-          <!-- right column feature -->
+
           <div class="col-md-6 clearfix">
             <h3>Featured Episode</h3>
-            <img src="http://placehold.it/150x150" alt="" class="rounded float-left pr-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nostrum! Libero error beatae deserunt voluptatum optio, id tempora molestias excepturi officiis aut maiores repellat veniam atque dolor voluptates dolorum aliquid animi suscipit amet minus? Voluptatem, nemo doloribus? Vel, illo incidunt architecto quos, aspernatur consequatur temporibus eveniet cupiditate commodi assumenda dolore totam neque, dignissimos ipsa accusantium nesciunt voluptatum dicta? Error, nisi.</p>
+            <img
+              src="http://placehold.it/150x150"
+              alt=""
+              class="rounded float-left pr-3"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, nostrum! Libero error beatae deserunt voluptatum optio,
+              id tempora molestias excepturi officiis aut maiores repellat
+              veniam atque dolor voluptates dolorum aliquid animi suscipit amet
+              minus? Voluptatem, nemo doloribus? Vel, illo incidunt architecto
+              quos, aspernatur consequatur temporibus eveniet cupiditate commodi
+              assumenda dolore totam neque, dignissimos ipsa accusantium
+              nesciunt voluptatum dicta? Error, nisi.
+            </p>
             <a href="" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
-
-      
       <footer class="py-3">Copyright 2020</footer>
-      
     </div>
-
-
-    
-    
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
