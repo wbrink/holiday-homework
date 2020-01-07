@@ -40,3 +40,36 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }
+
+card-img-top {
+  height: 50px;
+  width: 50px;
+}
+
+.jumbotron {
+  background-image: url("https://cdn.vox-cdn.com/thumbor/SS8_msFbRrwh8WkeuFTJqnySlwg=/0x0:1536x1150/1200x800/filters:focal(573x226:817x470)/cdn.vox-cdn.com/uploads/chorus_image/image/64669158/seinfeldcast.0.1498614946.0.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.jumbotron h1 {
+  position: absolute;
+  top: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding: 11em;
+  }
+}
+
+#index-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#news-header {
+  background-image: url("http://kramersapartment.com/wp-content/uploads/larry-david-boca-breeze.png");
+  background-size: cover;
+}

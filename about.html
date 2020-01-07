@@ -24,11 +24,20 @@
     <title>Hello, world!</title>
   </head>
 
-  <!-- using flexbox to stretch main content and footer to the bottom in case not enough content -->
+  <!-- using flexbox to stretch main content and footer to the bottom if not enough content-->
   <body class="d-flex flex-column">
     <div class="container">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mr-5" href="index.html">
+          <img
+            src="images/seinfeld_logo.png"
+            width="80"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
         <ul class="navbar-nav">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -37,10 +46,13 @@
             <a href="about.html" class="nav-link active">About</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Characters</a>
+            <a href="characters.html" class="nav-link">Characters</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="news.html" class="nav-link">News</a>
           </li>
         </ul>
       </nav>
@@ -151,6 +163,7 @@
 
       <footer class="py-3">Copyright 2020</footer>
     </div>
+    <!-- end container -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
